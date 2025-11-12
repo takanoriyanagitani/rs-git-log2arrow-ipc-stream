@@ -3,6 +3,26 @@ name = "rs-git-log2arrow-ipc-stream"
 version = "0.1.0"
 edition = "2024"
 
+description = "Shows the git log info as an ipc stream"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-git-log2arrow-ipc-stream"
+homepage = "https://github.com/takanoriyanagitani/rs-git-log2arrow-ipc-stream"
+documentation = "https://docs.rs/rs-git-log2arrow-ipc-stream/latest"
+keywords = ["arrow", "ipc", "stream", "git", "log"]
+categories = ["command-line-utilities"]
+
+exclude = [
+	"git-log2arrow-ipc-stream",
+]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+
 [[bin]]
 name = "git-log2arrow-ipc-stream"
 
