@@ -1,0 +1,13 @@
+[package]
+name = "rs-git-log2arrow-ipc-stream"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "git-log2arrow-ipc-stream"
+
+[dependencies]
+gix = { version = "0.63.0", features = ["revision"] }
+arrow = { version = "57", features = ["ipc"] }
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
